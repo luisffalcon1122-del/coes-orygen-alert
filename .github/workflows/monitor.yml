@@ -29,6 +29,8 @@ jobs:
         env:
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+          WHATSAPP_CLOUD_TOKEN: ${{ secrets.WHATSAPP_CLOUD_TOKEN }}
+          WHATSAPP_CLOUD_PHONE_ID: ${{ secrets.WHATSAPP_CLOUD_PHONE_ID }}
         run: python coes_monitor_ci.py
 
       - name: Guardar historial (commit de seen_events.json)
