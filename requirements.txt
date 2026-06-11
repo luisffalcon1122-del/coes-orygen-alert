@@ -1,1 +1,18 @@
-playwright>=1.40
+# ============================================================================
+# Dependencias del Monitor COES-ORYGEN
+# ============================================================================
+# Probado con Python 3.12.
+#
+# Instalacion:
+#   pip install -r requirements.txt
+#   python -m playwright install chromium       (descarga el navegador)
+#   python -m playwright install-deps chromium  (solo Linux: libs del sistema)
+#
+# Nota: la unica dependencia externa es Playwright. El resto de modulos que usa
+# el script (json, time, re, hashlib, os, sys, urllib, datetime) son parte de
+# la libreria estandar de Python y NO requieren instalacion.
+# ============================================================================
+
+# Automatizacion de navegador (scraping de la pagina del COES).
+# Se fija la version exacta probada para evitar sorpresas con actualizaciones.
+playwright==1.56.0
